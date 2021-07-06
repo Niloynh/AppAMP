@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.mid-content{
+    max-width: 1300px;
+    margin: auto;
+}
+
+/* Begin Main CSS */
+body,h1,h2,h3,h4,h5,h6,p,a,span{
+
+    font-family: 'Work Sans', sans-serif;
+}
+.header-section{
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    width: 100%;
+  
+}
+.header-section a{
+    color: #010101;
+}
+.header-logo{
+    width: 26%;
+    margin-left: 15px;
+}
+.header-logo:hover span{
+    color: #ddd;
+    transition: .4s;
+   
+}
+.logo img {
+    height: 55px;
+    float: left;
+    margin-right: 10px;
+}
+.logo span{
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.header-menu{
+    width: 56%;
+    
+}
+.header-button{
+    width: 14%;
+    float: right;
+}
+.header-btn{
+    display: inline-block;
+    border: 2px solid #6278DF;
+    padding: 5px 25px;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: #6278DF !important;
+    font-size: 15px;
+    font-weight: 600;
+}
+.header-button:hover a{
+    background-color:#6278DF;
+    color: #fff !important;
+    transition: .4s;
+    box-shadow: 1px 1px 5px gray;
+    
+}
+
+.primary-menu{}
+.primary-menu ul{}
+.primary-menu ul li{
+    display: inline-block;
+}
+.primary-menu ul li a{
+    display: block;
+    padding: 0 15px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 50px;
+}
+.primary-menu ul li a:hover{
+ 
+    color: #6278DF;
+    transition: .4s;
+}
+/* Dropdown Menu CSS */
+.primary-menu ul li {
+    position: relative;
+    
+}
+.primary-menu ul li ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 300px;
+    background: #fff;
+    font-weight: 600;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    transform: scaleY(0);
+    transform-origin: top center;
+    
+}
+.primary-menu ul li:hover ul{
+    
+    opacity: 1;
+    visibility: visible;
+    transform:scaleY(1);
+    
+}
+
+/* Banner Section */
+
+.banner-section{
+    background:url(img/mbr-4.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 145px 0;
+    color: #fff;
+    position: relative;
+    z-index: 9;
+   
+    
+}
+
+.banner-section::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    background: rgb(0, 0, 0, .4);
+    z-index: -1;
+    
+}
+
+.banner-contant{}
+.banner-contant h3{
+    padding: 15px 0;
+    font-size: 25px;
+    font-weight: 300;
+}
+.banner-contant h1{
+    padding-top: 25px ;
+    padding-bottom: 25px ;
+    font-size: 50px;
+}
+
+.default-btn{
+    color: gray;
+    margin-top: 10px;
+    margin-left:10px ;
+    padding: 20px 30px;
+    background: #fff;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 6px;
+}
+.default-btn:hover {
+    background: #6278DF;
+    transition: .4s;
+    color: #fff;
+}
+
+/*  Banner Buttom    */
+
+
+.banner-buttom{
+   background: #f7f9ff;
+   padding: 100px 0;
+   
+}
+.video-left {
+    width: 45%;
+    margin-left: 37px;
+    margin-top: 10px;
+   
+}
+.video-right{
+    width: 45%;
+    margin-right: 37px;
+   
+}
+.video-right h3{
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom: 30px;
+  
+  
+}
+.video-right p{
+    color: #767676;
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+
+/*   service Section */
+
+.service-section{
+    background: #fff;
+    padding: 85px 0;
+}
+.section-title h1{
+    font-size: 55px;
+    margin-bottom: 25px;
+}
+.section-title h3{
+    color: #767676;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+
+/*   services-items */
+.services-items{
+    margin-top: 90px;
+    margin-left: 45px;
+}
+.service-box{
+    width: 30.5%;
+    box-shadow: 4px 4px 20px 0 rgba(0,0,0,.1);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding: 25px;
+    box-sizing: border-box;
+  
+}
+.servie-icon{
+   width: 60px;
+   float: left;
+   min-height: 130px;
+   font-size: 50px;
+   color: #6278df;
+   margin-right: 10px;
+   font-weight: 300;
+}
+.service-content{
+    margin-top: 3px;
+}
+.service-content h2{
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.service-content p{
+    color: #767676;
+    font-size: 20px;
+    line-height: 1.6em;
+}
