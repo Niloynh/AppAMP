@@ -367,4 +367,5 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
 .pricing-table-item:hover .p-button .default-btn{
     background-color: #627Bdf;
     color: #fff;
+    transition: .3s;
 }
