@@ -101,7 +101,9 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
 }
 
 .primary-menu{}
-.primary-menu ul{}
+.primary-menu ul li ul li{
+    display: block;
+}
 .primary-menu ul li{
     display: inline-block;
 }
@@ -448,6 +450,7 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
     border-radius: 10px;
     box-shadow: 3px 4px 30px 0 rgba(98, 120, 223, .1);
     transition: .4s;
+    box-sizing: border-box;
 }
 .default-input:focus{
     box-shadow: 3px 4px 30px 0 rgba(98, 120, 223, .5);
@@ -632,4 +635,56 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
     width: 80px;
     float: left;
     margin-right: 24px;
+}
+
+/*  CONTACT SECTION  */
+ 
+.contact-section{
+    padding-top: 80px;
+}
+.contact-row {}
+.content-left-map{
+    width: 48%;
+    margin-top: 25px;
+}
+.content-right-form{
+    width: 48%;
+    margin-top: 40px;
+}
+.footer{ 
+    padding: 20px 0;
+    margin-top: 60px;
+}
+.footer p{
+    font-size: 20px;
+    color: #767676;
+}
+
+.footer-contact-from .w100{
+    width: 100%;
+}
+.footer-contact-from .w50{
+    width: 48%;
+}
+.footer-contact-from .default-input{
+    margin-bottom: 20px;
+}
+.footer-contact-from .submit-btn{
+    margin-left: 0;
+}
+.footer-contact-from textarea{
+    height: 200px;
+}
+.content-right-form p{
+    font-size: 21px;
+    color: #767676;
+    line-height: 1.8em;
+}
+.content-right-form h4{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 22px;
+}
+.footer-contact-from{
+    margin-top: 30px;
 }
