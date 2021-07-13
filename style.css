@@ -212,7 +212,7 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
 }
 .video-left {
     width: 45%;
-    margin-left: 37px;
+    /* margin-left: 37px; */
     margin-top: 10px;
    
 }
@@ -251,7 +251,9 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
     font-weight: 300;
 }
 
-
+.mobile-menu-check{
+    display: none;
+}
 /*   services-items */
 .services-items{
     margin-top: 90px;
@@ -265,6 +267,9 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
     padding: 25px;
     box-sizing: border-box;
   
+}
+.service-box:nth-child(3n+3){
+    margin-right: 0;
 }
 .servie-icon{
    width: 60px;
@@ -688,3 +693,4 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
 .footer-contact-from{
     margin-top: 30px;
 }
+/****  END ALL  ****/
